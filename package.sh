@@ -15,3 +15,15 @@ git clone --depth 1 -b master  https://github.com/UnblockNeteaseMusic/luci-app-u
 
 # OpenClash
 git clone --depth 1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+
+# 在线更新
+git clone --depth 1 https://github.com/wstanfeng/luci-app-gpsysupgrade package/luci-app-gpsysupgrade
+
+# ddns-go
+git clone --depth 1 https://github.com/sirpdboy/luci-app-ddns-go package/ddns-go
+
+# aliyundrive-webdav
+git clone --depth 1 -b main https://github.com/messense/aliyundrive-webdav package/aliyundrive-webdav
+
+# nezha
+git clone --depth 1 https://github.com/Erope/openwrt_nezha package/nezha
