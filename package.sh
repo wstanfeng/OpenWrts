@@ -27,3 +27,10 @@ git clone --depth 1 -b main https://github.com/messense/aliyundrive-webdav packa
 
 # nezha
 git clone --depth 1 https://github.com/Erope/openwrt_nezha package/nezha
+
+# Alist
+git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
+
+# iStore
+git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
+git_sparse_clone main https://github.com/linkease/istore luci
