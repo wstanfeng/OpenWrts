@@ -37,7 +37,7 @@ git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/
 # 家长控制
 git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 
-
+# 删除系统包
 rm -rf feeds/packages/multimedia/aliyundrive-webdav
 
 # 修改主机信息
