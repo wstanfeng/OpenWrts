@@ -22,6 +22,9 @@ git clone --depth 1 https://github.com/wstanfeng/luci-app-gpsysupgrade package/l
 # ddns-go
 git clone --depth 1 https://github.com/sirpdboy/luci-app-ddns-go package/ddns-go
 
+# 删除系统包
+rm -rf feeds/packages/multimedia/aliyundrive-webdav
+
 # aliyundrive-webdav
 git clone --depth 1 -b main https://github.com/messense/aliyundrive-webdav package/aliyundrive-webdav
 
