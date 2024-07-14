@@ -4,9 +4,6 @@
 # 修改默认IP为192.168.10.1
 # sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate 
 
-# 删除系统包
-rm -rf feeds/packages/multimedia/aliyundrive-webdav
-
 # 修改主机信息
 echo -n "$(date +"%Y%m%d")" > package/base-files/files/etc/openwrt_version
 
