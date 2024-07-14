@@ -34,9 +34,6 @@ git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-ali
 # 关机
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 
-# 家长控制
-git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-
 # 删除系统包
 rm -rf feeds/packages/multimedia/aliyundrive-webdav
 
