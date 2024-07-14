@@ -4,6 +4,18 @@
 # 修改默认IP为192.168.10.1
 # sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate 
 
+# 删除系统包
+rm -rf feeds/packages/multimedia/aliyundrive-webdav
+
+# 修改主机信息
+echo -n "$(date +"%Y%m%d")" > package/base-files/files/etc/openwrt_version
+
+# TTYD 免登录
+sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
+
+# 更换6.6内核 
+sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=6.6/g' ./target/linux/x86/Makefile
+
 # Hello World
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 
