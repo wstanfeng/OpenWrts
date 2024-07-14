@@ -31,6 +31,20 @@ git clone --depth 1 https://github.com/Erope/openwrt_nezha package/nezha
 # Alist
 git clone --depth=1 https://github.com/sbwml/luci-app-alist package/luci-app-alist
 
-# iStore
-git_sparse_clone main https://github.com/linkease/istore-ui app-store-ui
-git_sparse_clone main https://github.com/linkease/istore luci
+# 关机
+git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
+
+# 家长控制
+git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
+
+
+rm -rf feeds/packages/multimedia/aliyundrive-webdav
+
+# 修改主机信息
+echo -n "$(date +"%Y%m%d")" > package/base-files/files/etc/openwrt_version
+
+# TTYD 免登录
+sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
+
+# 更换6.6内核 
+sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=6.6/g' ./target/linux/x86/Makefile
